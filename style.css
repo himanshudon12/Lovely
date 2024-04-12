@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -38,8 +40,17 @@ button:hover {
     background-color: #ddd;
 }
 
+#noButton {
+    order: 0; /* Default order */
+}
+
+#noButton.clicked {
+    order: -1; /* Move to the beginning */
+}
+
 #response {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+    color: pink; /* Pink color for the response */
 }
