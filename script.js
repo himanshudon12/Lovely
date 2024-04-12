@@ -4,11 +4,13 @@ const noButton = document.getElementById('noButton');
 const response = document.getElementById('response');
 
 noButton.addEventListener('click', () => {
-    // Calculate a random position between -2 and 2
-    const newPosition = Math.floor(Math.random() * 5) - 2;
+    // Generate random positions for left and top styles
+    const leftPosition = Math.floor(Math.random() * 90) + 5; // Random left position between 5% and 95%
+    const topPosition = Math.floor(Math.random() * 90) + 5; // Random top position between 5% and 95%
     
-    // Move the button to the calculated position
-    noButton.style.order = newPosition;
+    // Apply the random positions to move the button
+    noButton.style.left = `${leftPosition}%`;
+    noButton.style.top = `${topPosition}%`;
 });
 
 const yesButton = document.getElementById('yesButton');
